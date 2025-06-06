@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dołącz - Tole Tole Liberation</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+    body {
+      background: linear-gradient(135deg, #1b1b1b, #3a0066);
+      color: #ffe3d8;
+      font-family: 'VT323', monospace;
+      padding: 2rem;
+      margin: 0;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 2rem;
+      border: 2px dashed #ff99ff;
+      border-radius: 12px;
+      box-shadow: 0 0 10px #ff99ff88;
+    }
+
+    h1 {
+      color: #ffccff;
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    nav {
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: #ffccff;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+      color: #ff66ff;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+
+    label {
+      font-size: 1.2rem;
+      color: #ffccff;
+      user-select: none;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      background: transparent;
+      border: 2px solid #ff99ff;
+      border-radius: 8px;
+      color: #ffe3d8;
+      font-family: 'VT323', monospace;
+      font-size: 1.1rem;
+      padding: 0.6rem 1rem;
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+      resize: vertical;
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    textarea:focus {
+      outline: none;
+      border-color: #ff66ff;
+      box-shadow: 0 0 8px #ff66ff88;
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    button {
+      cursor: pointer;
+      background: #ff66ff;
+      border: none;
+      border-radius: 12px;
+      padding: 0.8rem;
+      font-family: 'VT323', monospace;
+      font-size: 1.2rem;
+      color: #1b1b1b;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: #ff33cc;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <a href="index.html">Manifest</a>
+      <a href="symbole.html">Symbole</a>
+      <a href="postacie.html">Postacie</a>
+      <a href="cele.html">Cele</a>
+      <a href="kontakt.html">Dołącz</a>
+    </nav>
+
+    <h1>Dołącz do Ruchu Tole Tole</h1>
+
+    <form action="https://formsubmit.co/lewdomino1@gmail.com" method="POST">
+      <label for="name">Imię</label>
+      <input type="text" id="name" name="name" placeholder="Twoje imię" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Twój email" required />
+
+      <label for="message">Wiadomość</label>
+      <textarea id="message" name="message" rows="5" placeholder="Napisz coś..." required></textarea>
+
+      <input type="hidden" name="_captcha" value="false" />
+      <input type="hidden" name="_next" value="https://aastro0o.github.io/tole-tole/dziekujemy.html" />
+
+      <button type="submit">Wyślij</button>
+    </form>
+  </div>
+</body>
+</html>
